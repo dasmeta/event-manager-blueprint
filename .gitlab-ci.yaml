@@ -1,0 +1,9 @@
+build-gcf:
+  - npm install -g @dasmeta/event-manager-cli
+  - event-manager-cli build --platform gcf
+  - event-manager-cli deploy .
+
+build-fission:
+  - npm install -g @dasmeta/event-manager-cli
+  - event-manager-cli build --platform fision
+  - event-manager-cli deploy .
