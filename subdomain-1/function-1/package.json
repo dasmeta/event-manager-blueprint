@@ -1,3 +1,6 @@
 {
   "topic": "esiminch"
+  "dependencies": {
+    "someApiClient": "1.2.3"
+  }
 }
