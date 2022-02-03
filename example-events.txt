@@ -1,0 +1,1 @@
+group.add - '{"traceId":"7dc2db1a-0521-445f-9463-4eda3c917d96","eventId":"61fb7862991363c458efd903","data":{"groupId":"61fb7862bbd948c458641436","externalId":"62cf1994-2a96-4fdf-95c1-534220a0e2ee","partnerId":"5d68397dc9e62a001c9ec725","date":"2022-02-03T06:38:26.830Z"},"dataSource":null}'

@@ -1,0 +1,8 @@
+{
+  "global-topic1": {
+    "key": "value for global-topic1"
+  },
+  "global-topic2": {
+    "key": "value for global-topic1"
+  }
+}
