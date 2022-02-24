@@ -17,7 +17,7 @@
     "dev:run-topic": "emc help dev run topic --project-dir=$(pwd) --env-file=$(pwd)/env.json --test-data-file=$(pwd)/test-data.json"
   },
   "dependencies": {
-    "@dasmeta/event-manager-platform-helper": "^1.0.3"
+    "@dasmeta/event-manager-platform-helper": "^1.1.0"
   },
   "devDependencies": {
     "@google-cloud/storage": "^2.5.0",
