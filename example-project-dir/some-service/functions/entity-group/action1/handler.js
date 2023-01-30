@@ -3,6 +3,9 @@
 module.exports = async (data, meta) => {
     console.log('handler data', data)
     console.log('handler meta', meta)
+
+    console.log("QQQ")
+    console.log("QQQQQQQ")
     // const {  } = data;
 
     // do something
