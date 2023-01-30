@@ -2,9 +2,7 @@
   "name": "action2",
   "version": "1.0.0",
   "main": "run.js",
-  "dependencies": {
-    "@dasmeta/event-manager-platform-helper": "^1.1.0"
-  },
+  "dependencies": {},
   "gcf": {
     "topic": "global-topic2"
   }
