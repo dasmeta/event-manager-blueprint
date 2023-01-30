@@ -16,7 +16,7 @@ In case of manually editing make sure all cases are replaced.
 - `functionsConfig.dir` is the folder where functions will be generated for the current project.
 - `functionsConfig.deploymentUid` is the uid to be used by fission to identify resources.
 
-`"dependencies"` in `package.josn` is used to clone global project dependencies to new created functions and later sync in all functions.
+`"dependencies"` in `package.json` is used to clone global project dependencies to new created functions and later sync in all functions.
 
 ### Generated Files
 - `env.json` local environment json file
