@@ -9,7 +9,7 @@
     "function:sync-version": "emc function sync-version --project-dir=$(pwd)",
     "platform:generate-gcf-deploy": "emc platform generate-deploy --project-dir=$(pwd) --is-GCF --functions-list-file=$(pwd)/list.json --env-file=env.yml",
     "platform:generate-fission-deploy": "emc platform generate-deploy --project-dir=$(pwd) --is-fission --env-file=env.yaml",
-    "platform:generate-aws-deploy": "emc platform generate-deploy --project-dir=$(pwd) --is-serverless-aws --env-file=env.yml",
+    "platform:generate-aws-deploy": "emc platform generate-deploy --project-dir=$(pwd) --is-serverless-aws --aws-region=eu-central-1 --env-file=env.yml",
     "prettier": "prettier --write '**/*.js'",
     "test": "NODE_ENV=test yarn nyc mocha './functions/**/*test.js'",
     "dev:start": "PUBSUB_EMULATOR_HOST='localhost:8085' PUBSUB_PROJECT_ID='my-project-id' GCLOUD_PROJECT='my-project-id' emc dev start --project-dir=$(pwd)",
