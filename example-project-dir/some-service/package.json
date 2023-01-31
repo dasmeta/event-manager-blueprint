@@ -9,7 +9,7 @@
     "function:sync-version": "emc function sync-version --project-dir=$(pwd)",
     "platform:generate-gcf-deploy": "emc platform generate-deploy --project-dir=$(pwd) --is-GCF --functions-list-file=$(pwd)/list.json --env-file=env.yml",
     "platform:generate-fission-deploy": "emc platform generate-deploy --project-dir=$(pwd) --is-fission --env-file=env.yaml",
-    "platform:generate-aws-deploy": "emc platform generate-deploy --project-dir=$(pwd) --is-serverless-aws --aws-region=eu-central-1 --env-file=env.yml",
+    "platform:generate-aws-deploy": "emc platform generate-deploy --project-dir=$(pwd) --is-serverless-aws --aws-region=eu-central-1 --event-manager-backend-host=http://localhost:8037 --env-file=env.yml",
     "prettier": "prettier --write '**/*.js'",
     "test": "NODE_ENV=test yarn nyc mocha './functions/**/*test.js'",
     "dev:start": "PUBSUB_EMULATOR_HOST='localhost:8085' PUBSUB_PROJECT_ID='my-project-id' GCLOUD_PROJECT='my-project-id' emc dev start --project-dir=$(pwd)",
@@ -17,10 +17,10 @@
     "dev:run-topic": "emc help dev run topic --project-dir=$(pwd) --env-file=$(pwd)/env.json --test-data-file=$(pwd)/test-data.json"
   },
   "dependencies": {
-    "@dasmeta/event-manager-platform-helper": "^1.1.0"
+    "@dasmeta/event-manager-platform-helper": "^1.3.0"
   },
   "devDependencies": {
-    "@dasmeta/event-manager-cli": "^1.2.2",
+    "@dasmeta/event-manager-cli": "^1.3.4",
     "@google-cloud/storage": "^2.5.0",
     "dotenv-yaml": "^0.1.4",
     "eslint": "^5.16.0",
